@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "5191d219-5b33-4628-b014-860fa3954042",
+		"name": "registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/reg",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "value",
+						"value": "EL0JXTTeVf",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"anna1200@mail.comm\",\r\n        \"lastName\": \"sansa\",\r\n        \"login\": \"lord\",\r\n        \"password\": \"12\",\r\n        \"email\": \"12\",\r\n        \"creditNumber\": \"5404 3600 8922 0783\",\r\n        \"telephone\": \"1234354567\",\r\n        \"dateReg\": \"01-06-2019\",\r\n        \"authority\": \"User\",\r\n        \"statusUser\": \"Active\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"signup"
+					]
+				},
+				"description": "регистрация пользователя"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/users/3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en",
+						"type": "text"
+					},
+					{
+						"key": "value",
+						"value": "EL0JXTTeVf",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"firstName\": \"anna\",\r\n        \"lastName\": \"sansa\",\r\n        \"login\": \"a.lord\",\r\n        \"password\": \"12\",\r\n        \"email\": \"anna1200@mail.comm\",\r\n        \"creditNumber\": \"5404 3600 8922 0783\",\r\n        \"telephone\": \"1234354567\",\r\n        \"dateReg\": \"01-06-2019\",\r\n        \"authority\": \"User\",\r\n        \"statusUser\": \"Active\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/users/a.stark",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users/login/a.korolev",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"login",
+						"a.korolev"
+					]
+				},
+				"description": "запрос по логину"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/users/update/list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": 1,\n        \"firstName\": \"Анна\",\n        \"lastName\": \"Лунина\",\n        \"login\": \"a.lunina\",\n        \"password\": \"pass\",\n        \"email\": \"a.lunina@mail.com\",\n        \"creditNumber\": \"145689997676\",\n        \"telephone\": \"11111111111\",\n        \"dateReg\": \"10-05-2018\",\n        \"authority\": \"ADMIN\",\n        \"statusUser\": \"ACTIVE\"\n    },\n    {\n        \"id\": 2,\n        \"firstName\": \"Aлекс\",\n        \"lastName\": \"Королев++++++++++++\",\n        \"login\": \"a.korolev\",\n        \"password\": \"pass\",\n        \"email\": \"a.korolev@mail.com\",\n        \"creditNumber\": \"14568934397466\",\n        \"telephone\": \"11123321111\",\n        \"dateReg\": \"11-05-2018\",\n        \"authority\": \"USER\",\n        \"statusUser\": \"ACTIVE\"\n    },\n    {\n        \"id\": 3,\n        \"firstName\": \"Роман\",\n        \"lastName\": \"Лавров++++++++++++++\",\n        \"login\": \"r.lavrov\",\n        \"password\": \"pass\",\n        \"email\": \"r.lavrov@mail.com\",\n        \"creditNumber\": \"14568934397766\",\n        \"telephone\": \"11123321114\",\n        \"dateReg\": \"12-05-2018\",\n        \"authority\": \"USER\",\n        \"statusUser\": \"ACTIVE\"\n    },\n    {\n        \"id\": 4,\n        \"firstName\": \"anna1200@mail.comm\",\n        \"lastName\": \"sansa\",\n        \"login\": \"a.lord\",\n        \"password\": \"12\",\n        \"email\": \"12\",\n        \"creditNumber\": \"5404 3600 8922 0783\",\n        \"telephone\": \"1234354567\",\n        \"dateReg\": \"31-05-2019\",\n        \"authority\": \"USER\",\n        \"statusUser\": \"ACTIVE\"\n    },\n    {\n        \"id\": 6,\n        \"firstName\": \"anna1200@mail.comm\",\n        \"lastName\": \"sansa\",\n        \"login\": \"a.lord1\",\n        \"password\": \"12\",\n        \"email\": \"12\",\n        \"creditNumber\": \"5404 3600 8922 0783\",\n        \"telephone\": \"1234354567\",\n        \"dateReg\": \"31-05-2019\",\n        \"authority\": \"USER\",\n        \"statusUser\": \"ACTIVE\"\n    },\n    {\n        \"id\": 7,\n        \"firstName\": \"dfdfdf\",\n        \"lastName\": \"dfdfdfd\",\n        \"login\": \"a.stk12343\",\n        \"password\": \"12\",\n        \"email\": \"a.stark@yandex.com\",\n        \"creditNumber\": \"5404 3600 8922 0783\",\n        \"telephone\": \"12323432\",\n        \"dateReg\": \"09-12-0006\",\n        \"authority\": \"USER\",\n        \"statusUser\": \"ACTIVE\"\n    }\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/users/update/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"update",
+						"list"
+					]
+				},
+				"description": "обновление всей таблицы"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/users/delete/8",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users/delete/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"delete",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

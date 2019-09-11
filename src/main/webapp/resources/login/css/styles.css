@@ -1,0 +1,164 @@
+﻿
+/* Для страницы аутентификации*/
+
+/*При загрузке весь блок не отображается на странице.*/
+.divEnter {
+display: none;
+}
+
+/*Надпись над полем ввода учетной записи*/
+.loginUser  {
+    font-family: Cambria;
+    font-style: italic;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+/*поле типа input - ввод учетной записи*/
+.loginInput {
+    border: 2px solid black;
+    font-family: Adventure;
+    font-size: 25px;
+    color: blueviolet;
+}
+
+/*место для сообщения об ошибке.*/
+.loginErrMessage{
+    padding-top: 10px;
+    padding-left: 5px;
+    font-style: italic;
+}
+
+
+/*Надпись над полем ввода пароля*/
+.passwordUser{
+    font-family: Cambria;
+    font-style: italic;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+
+/* для показа значения введенной учетной записи*/
+.loginEntered {
+    font-size: 20px;
+    font-family: Cambria;
+    font-style: italic;
+    color: black;
+    padding-bottom: 5px;
+}
+
+/*поле типа input - ввод пароля*/
+.passwordInput {
+    border: 2px solid black;
+    font-family: Adventure;
+    font-size: 25px;
+    color: blueviolet;
+}
+
+
+.passwordErrMessage{
+    padding-left: 5px;
+    font-style: italic;
+}
+
+/* место для дианостического сообщения*/
+.authenticationMessage{
+    padding-top: 25px;
+    font-size: 20px;
+}
+
+/*Вывод сообщения рядом с полем ввода учетной записи*/
+loginMessage {
+    padding-left: 25px;
+}
+
+
+/*Вывод сообщения рядом с полем ввода пароля*/
+.passwordMessage {
+    padding-left: 15px;
+}
+
+/*внешний блок div для радиокнопок*/
+.choiceOption{
+    display: none;
+    padding-top: 10px;
+    font-family:Adventure;
+    font-size: 25px;
+    color: blueviolet;
+}
+
+/*блок для радиокнопки - восстановление пароля*/
+.repairAccount{
+    padding-top: 20px;
+}
+
+/*блок для радиокнопки - регистрация пользователя*/
+.registrationUser {
+    padding-top:25px;
+}
+
+/*блок для радиокнопки - заглушки*/
+.notChoice{
+    padding-top: 25px;
+}
+
+.buttonRadio{
+    margin-top: 15px;
+}
+
+
+.queryErrorById{
+    color: red;
+    padding-left: 15px;
+}
+
+.error {
+        color: red;
+        padding-top:15px;
+        
+    }
+
+    .noError {
+        color: green;
+        padding-bottom:10px;
+    }
+
+    .errorEmail{
+        color: red;
+        padding-top:15px;
+    }
+
+    .noErrorEmail{
+        color: green;
+        padding-bottom:10px;
+    }
+
+
+    .divEnter {
+        padding-bottom: 10px;
+    }
+
+    .email {
+        padding-bottom: 10px;
+        padding-bottom: 15px;
+    }
+
+    .email span {
+        padding-right: 15px;
+        font-weight: bold;
+        font-size: 15px;
+        color: blue;
+    }
+
+    .password{
+        padding-bottom: 10px;
+    }
+
+    .password span {
+        padding-right: 77px;
+        font-weight: bold;
+        font-size: 15px;
+        color: blue;
+    }
+

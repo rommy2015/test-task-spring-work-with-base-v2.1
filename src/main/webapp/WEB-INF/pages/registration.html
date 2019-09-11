@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <script src="resources/js/jquery/jquery-3.3.1.js"></script>
+    <script src="resources/js/jquery/jquery.validate.js"></script>
+    <script src="resources/registration/js/bootstrap.min.js"></script>
+    <script src="resources/registration/script/script.js"></script>
+    <script src="resources/registration/script/auth.js"></script>
+    <script src="resources/registration/js/additional-methods.min.js"></script>
+    <script src="resources/registration/js/localization/messages_ru.js"></script>
+
+</head>
+<body>
+<div class="success"><h2><a href="#">Аутентификация</a></h2></div>
+<div class="errMessage"></div>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <h2>Валидация формы</h2>
+            <hr>
+            <form class="form myForm" id="myForm">
+                <div class="messageForCommonError js-form-message"></div>
+
+                <div class="form-group">
+                    <label for="inputEmail">Введите email:</label>
+                    <input type="email" class="form-control email" name="email" id="inputEmail"
+                           placeholder="Введите email">
+                </div>
+                <div class="form-group firstName">
+                    <label for="inputName">Введите имя:</label>
+                    <input type="text" class="form-control" name="name" id="inputName" placeholder="Введите имя">
+                </div>
+                <div class="form-group lastName">
+                    <label for="inputName">Введите фамилию:</label>
+                    <input type="text" class="form-control" name="lastname" id="inputFamily"
+                           placeholder="Введите фамилию">
+                </div>
+
+                <div class="form-group login">
+                    <label for="inputName">Введите login:</label>
+                    <input type="text" class="form-control" name="login" id="inputLogin" placeholder="Введите фамилию">
+                </div>
+
+                <div class="form-group password">
+                    <label for="inputPassword">Введите пароль:</label>
+                    <input type="password" class="form-control classPassword" name="password" id="inputPassword"
+                           placeholder="Введите пароль">
+                </div>
+                <div class="form-group">
+                    <label for="inputPasswordRepeat">Повторите пароль:</label>
+                    <input type="password" class="form-control" name="passwordRepeat" id="inputPasswordRepeat"
+                           placeholder="Повторите ввод пароля">
+                </div>
+                <div class="form-group dateInput">
+                    <label for="inputDate">Введите дату:</label>
+                    <input type="date" class="form-control" name="date" id="inputDate" placeholder="Введите дату">
+                </div>
+                <div class="form-group telephone">
+                    <label for="inputTelephone">Введите номер вашего телефона:</label>
+                    <input type="text" class="form-control" name="telephone" id="inputTelephone"
+                           placeholder="Введите номер телефона">
+                </div>
+                <div class="form-group creditCard">
+                    <label for="inputCreditcard">Введите номер вашей кредитной карты:</label>
+                    <input type="text" class="form-control" name="creditcardName" id="inputCreditcard"
+                           placeholder="Введите номер кредитной карты">
+                </div>
+
+                <div class="form-group role">
+                    <label for="inputRole">Роль безопасности:</label>
+                    <select id="inputRole" name="role">
+                        <option>Admin</option>
+                        <option selected>User</option>
+                    </select>
+                </div>
+                <div class="form-group status">
+                    <label for="inputStatus">Состояние учетной записи:</label>
+                    <select id="inputStatus" name="role">
+                        <option selected>Active</option>
+                        <option>Banned</option>
+                        <option>Disabled</option>
+                    </select>
+                </div>
+                <button type="button" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+

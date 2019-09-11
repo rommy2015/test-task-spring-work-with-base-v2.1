@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>authentication</title>
+
+    <link rel="stylesheet" type="text/css" href="/resources/login/css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="/resources/login/css/jquery-ui.css"/>
+
+    <script src="/resources/login/js/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/resources/login/js/jquery/jquery-ui.js"></script>
+    <script src="/resources/login/js/scripts/lib/auth-lib.js"></script>
+    <script src="/resources/login/js/scripts/lib/common.js"></script>
+    <script src="/resources/login/js/scripts/authentication/ajax-authentication.js"></script>
+
+</head>
+<body>
+<!--Authentication-->
+<div class="divEnter">
+
+     <!--The field is for enter username-->
+    <div class="login">
+        <div class="loginUser"></div>
+        <label>
+            <input value="" size="25" maxlength="10" class="loginInput"
+                   placeholder=""/>
+        </label>
+    </div>
+    <div class="loginErrMessage"></div>
+
+    <!--The field is for enter password-->
+    <div class="password">
+        <div class="loginEntered"></div>
+        <label>
+            <input type="password" value="" size="25" maxlength="15"
+                   class="passwordInput"
+                   placeholder=""/>
+        </label>
+    </div>
+    <div class="passwordErrMessage"></div>
+
+     <!--This block displays list of radio buttons of actions choice ,
+     if the password was entered incorrectly -->
+    <div class="choiceOption">
+
+        <!-- account recovery
+        (the button is selected default)-->
+        <div class="repairAccount">
+            <label tabindex="1" >
+                <span  class="repairAccountLabel"></span>
+                <input  type="radio" name="authentication" value="repairAuth" class="radioAuth" checked>
+            </label>
+        </div>
+
+        <!-- The button point to page of registration new user-->
+        <div class="registrationUser">
+            <label>
+                <span class="createAccount"></span>
+                <input type="radio" name="authentication" value="reg" class="radioAuth">
+            </label>
+        </div>
+    </div>
+</div>
+</body>
+</html>
