@@ -24,7 +24,7 @@
         <version.junit>4.12</version.junit>
         <version.servlet>4.0.1</version.servlet>
         <version.apache.dbcp>2.6.0</version.apache.dbcp>
-        <version.hibernate.validator>6.0.16.Final</version.hibernate.validator>
+        <version.hibernate.validator>6.1.0.Final</version.hibernate.validator>
         <version.hibernate.core>5.4.2.Final</version.hibernate.core>
         <mysql.version>8.0.15</mysql.version>
         <jackson.version>2.9.9</jackson.version>
