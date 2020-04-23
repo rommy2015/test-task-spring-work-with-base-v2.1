@@ -27,7 +27,7 @@
         <version.hibernate.validator>6.0.16.Final</version.hibernate.validator>
         <version.hibernate.core>5.4.2.Final</version.hibernate.core>
         <mysql.version>8.0.15</mysql.version>
-        <jackson.version>2.9.9</jackson.version>
+        <jackson.version>2.9.10.4</jackson.version>
         <version.spring.security>5.1.5.RELEASE</version.spring.security>
         <version.spring.config>5.1.5.RELEASE</version.spring.config>
         <version.commons.lang>3.9</version.commons.lang>
